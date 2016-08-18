@@ -1,0 +1,9 @@
+occurrenceID	title	type	identifier	format	license
+ABLCU001-09	ABLCU001-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001001+1244645180.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU002-09	ABLCU002-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001002+1244645164.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU003-09	ABLCU003-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001003+1244646044.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU004-09	ABLCU004-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001004+1244512714.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU005-09	ABLCU005-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001005+1244646008.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU006-09	ABLCU006-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001006+1244645994.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU007-09	ABLCU007-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001007+1244645884.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
+ABLCU008-09	ABLCU008-09	http://purl.org/dc/dcmitype/StillImage	http://www.boldsystems.org/pics/ABLCU/CSU-CPG-LEP001008+1244645914.JPG	image/jpeg	https://creativecommons.org/licenses/by/3.0/
