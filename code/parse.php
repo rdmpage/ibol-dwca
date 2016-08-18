@@ -122,7 +122,7 @@ while (!feof($file_handle))
 		
 		$api_obj = fetch_data($id);
 		
-		print_r($api_obj);
+		//print_r($api_obj);
 		
 		// occurrence
 		$occurrence = new stdclass;
@@ -179,7 +179,9 @@ while (!feof($file_handle))
 			{
 				// Treat updated info we get from API as an identification
 				$identification = new stdclass;
-				$identification->occurrenceID = $id;
+				//$identification->occurrenceID = $id;
+				$identification->occurrenceID = $obj->processid; // old-style, based on data downloads
+				
 				$identification->identificationID = $identification_count + 1;
 				
 				$identification->scientificName = $api_obj->species_name;
@@ -214,6 +216,7 @@ while (!feof($file_handle))
 		
 		//print_r($occurrence);
 		
+		/*
 		$header = array();
 		$values = array();
 		foreach ($occurrence as $k => $v)
@@ -222,7 +225,6 @@ while (!feof($file_handle))
 			$values[] = $v;
 		}
 		
-		/*
 		if ($occurrence_count == 0)
 		{
 			//echo join("\t", $header) . "\n";
@@ -245,12 +247,18 @@ while (!feof($file_handle))
 			{
 				$media = new stdclass;
 				
-				$media->occurrenceID = $id;
+				// $media->occurrenceID = $id;
+				$media->occurrenceID = $obj->processid; // old-style, based on data downloads
 				$media->title = $id;
 			
 				$media->identifier = $image_urls[$i];
 				// some URLs have # symbol (why?)
 				$media->identifier = str_replace('#', '%23', $media->identifier);
+				// encode '+' otherwise GBIF breaks
+				$media->identifier = str_replace('+', '%2B', $media->identifier);
+				
+				// URL of barcode page 
+				$media->references =  'http://bins.boldsystems.org/index.php/Public_RecordView?processid=' . $id;
 				
 				$media->format = '';
 				if (preg_match('/\.(?<extension>[a-z]{3,4})$/i', $image_urls[$i], $m))
@@ -320,14 +328,14 @@ while (!feof($file_handle))
 			
 	$count++;
 	
-	if ($count % 100 == 0)
+	if ($count % 10 == 0)
 	{
 		pause();
 	}
 	
 	
 	// testing
-	//if ($count > 10) break;
+	if ($count > 10) break;
 }
 
 ?>

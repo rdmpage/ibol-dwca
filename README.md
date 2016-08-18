@@ -5,6 +5,7 @@
 
 ### Gotchas
 
+#### File encoding
 The file iBOL_phase_0.50_COI.tsv is not UTF-8 encoded, so we need to convert it. For example:
 
 ```
@@ -12,6 +13,9 @@ iconv -f iso-8859-1 -t utf-8 iBOL_phase_0.50_COI.tsv > iBOL_phase_0.50_COI.tsv.n
 rm iBOL_phase_0.50_COI.tsv
 mv iBOL_phase_0.50_COI.tsv.new iBOL_phase_0.50_COI.tsv
 ```
+
+#### Image URLs have awkward characters
+BOLD web site has URLs for images that contain ‘#’ and ‘+’ symbols. These need to be URL encoded.
 
 ## Load into MySQL
 
@@ -55,7 +59,7 @@ Now we need to create the Darwin Core archive.
 I then generated a meta.xml file, and finally the Darwin Core Archive (DwC-A) (which is simply a zip file):
 
 ```
-zip ibol-dwca.zip eml.xml meta.xml occurrences.tsv 
+zip ibol-dwca.zip eml.xml meta.xml occurrences.tsv media.txt
 ```
 
 Next we need to check that the DwC-A file is valid using the [Darwin Core Archive Validator](http://tools.gbif.org/dwca-validator/).
