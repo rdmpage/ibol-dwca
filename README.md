@@ -82,9 +82,23 @@ HTTP 201 Created
 131032
 ```
 
-## Step 4
+## Step 4 Wait
 
-Wait for GBIF to index the data…
+Wait for GBIF to index the data… this happens in near real time.
+
+## Step 5 Edit and update
+
+If the data needs to be tweaked, edit the data, put the new archive where it can be harvested (i.e., the endpoint) and ask GBIF to crawl it again.
+
+http://api.gbif.org/v1/dataset/040c5662-da76-4782-a48e-cdea1892d14c/crawl
+
+POST
+
+Response
+
+HTTP/1.1 201 Created
+
+
 
 
 
