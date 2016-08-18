@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId=""  system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+  <title>International Barcode of Life project (iBOL)</title>
+  
+  <creator>
+    <organizationName>International Barcode of Life project (iBOL)</organizationName>
+    <electronicMailAddress>info@iBOL.org</electronicMailAddress>
+    <onlineUrl>http://ibol.org</onlineUrl>
+  </creator>
+  
+  <metadataProvider>
+   <individualName>
+    <givenName>Roderic D. M.</givenName>
+    <surName>Page</surName>
+   </individualName>
+   <organizationName>University of Glasgow</organizationName>
+   <address/>
+   <electronicMailAddress>Roderic.Page@glasgow.ac.uk</electronicMailAddress>
+  </metadataProvider>
+  
+  <pubDate>2016-08-18</pubDate>
+
+
+<language>en</language>
+<abstract>
+  <para>The International Barcode of Life Project (iBOL) was formally activated in October 2010. Its first phase (2010-2015) will lead to the acquisition of DNA barcode records for 5M specimens representing 500K species. iBOL will release each barcode record in two phases. The initial phase will release barcode sequence(s), trace files, high-level (ordinal) taxonomic assignment, GPS co-ordinates and the country of collection. This phase of data release will occur automatically on a quarterly basis in datafiles posted on this page as well as at GenBank. The second phase of data release will involve a more precise taxonomic assignment and ancillary data, such as images, for each specimen.</para>
+
+<para>The data released to date consists of records for 2,869,168 sequences analyzed at the Canadian Centre for DNA Barcoding at the University of Guelph and the Centre for Environmental &amp; Molecular Algal Research at the University of New Brunswick during the first year of iBOL ramp-up (July 1, 2009 - June 30, 2010) and the 66 months of the officially activated iBOL project (July 1, 2010 - Dec 31, 2015). These specimens are derived from many collaborators in many nations.</para>
+
+</abstract>
+
+<!-- I'm not the copyright holder, and iBOL haven't asserted any license, so let's assume this is Public Domain -->
+<intellectualRights>
+<para>
+This work is free of known copyright restrictions.
+<ulink url="http://creativecommons.org/publicdomain/mark/1.0/">
+<citetitle>Public Domain Mark</citetitle>
+</ulink>
+</para>
+</intellectualRights>
+
+<contact>
+<organizationName>
+International Barcode of Life project (iBOL)
+</organizationName>
+<electronicMailAddress>info@iBOL.org</electronicMailAddress>
+<onlineUrl>http://ibol.org</onlineUrl>
+</contact>
+<contact>
+<organizationName>
+Barcode of Life Data Systems (BOLD)
+</organizationName>
+<electronicMailAddress>info@boldsystems.org</electronicMailAddress>
+<onlineUrl>http://bins.boldsystems.org</onlineUrl>
+</contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+    <dateStamp>2016-08-18T17:50:40Z</dateStamp>
+    <citation>International Barcode of Life project (iBOL)</citation>
+    
+    <bibliography>
+    	<citation identifier="http://doi.org/10.1111/j.1471-8286.2007.01678.x">RATNASINGHAM, S., &amp; HEBERT, P. D. N. (2007, January 24). BARCODING: bold: The Barcode of Life Data System (http://www.barcodinglife.org). Molecular Ecology Notes. Wiley-Blackwell. http://doi.org/10.1111/j.1471-8286.2007.01678.x</citation>
+    
+    <citation identifier="http://doi.org/10.1371/journal.pone.0066213">Ratnasingham, S., &amp; Hebert, P. D. N. (2013, July 8). A DNA-Based Registry for All Animal Species: The Barcode Index Number (BIN) System. (D. Fontaneto, Ed.)PLoS ONE. Public Library of Science (PLoS). http://doi.org/10.1371/journal.pone.0066213</citation>
+
+    </bibliography>
+    
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

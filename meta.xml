@@ -1,0 +1,96 @@
+<archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="eml.xml">
+  <core encoding="utf-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
+    <files>
+      <location>occurrences.tsv</location>
+    </files>
+    
+    <!-- 
+0	processid
+1	sampleid
+2	museumid
+3	fieldid
+4	bin_guid
+5	bin_name
+6	vouchertype
+7	inst_reg
+8	phylum_reg
+9	class_reg
+10	order_reg
+11	family_reg
+12	subfamily_reg
+13	genus_reg
+14	species_reg
+15	taxonomist_reg
+16	collectors
+17	collectiondate
+18	lifestage
+19	lat
+20	lon
+21	site
+22	sector
+23	region
+24	province_reg
+25	country_reg
+26	fundingsrc
+27	seqentryid
+28	seqdataid
+29	marker_code
+30	nucraw
+31	aminoraw
+32	seq_update
+33	total_trace_count
+34	high_trace_count
+35	accession    
+     -->
+    
+    <id index="0" />
+    
+    <field index="0" term="http://rs.tdwg.org/dwc/terms/occurrenceID"/>
+    <!-- sample and specimen ids -->
+    <field index="1" term="http://rs.tdwg.org/dwc/terms/otherCatalogNumbers"/>    
+    <field index="2" term="http://rs.tdwg.org/dwc/terms/catalogNumber"/>
+    <field index="3" term="http://rs.tdwg.org/dwc/terms/recordNumber"/>
+    <!-- taxon -->
+    <field index="4" term="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    <!-- 5 bin_name -->
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/basisOfRecord"/>
+   	<field index="7" term="http://rs.tdwg.org/dwc/terms/institutionCode"/>
+    <!-- classification -->
+    <field index="8" term="http://rs.tdwg.org/dwc/terms/phylum"/>
+    <field index="9" term="http://rs.tdwg.org/dwc/terms/class"/>
+    <field index="10" term="http://rs.tdwg.org/dwc/terms/order"/>
+    <field index="11" term="http://rs.tdwg.org/dwc/terms/family"/>
+    <!-- 12 subfamily -->
+    <field index="13" term="http://rs.tdwg.org/dwc/terms/genus"/>
+    <field index="14" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <field index="15" term="http://rs.tdwg.org/dwc/terms/identifiedBy"/>
+    
+    <!-- collection event -->
+    <field index="16" term="http://rs.tdwg.org/dwc/terms/recordedBy"/>
+    <field index="17" term="http://rs.tdwg.org/dwc/terms/verbatimEventDate"/>
+	<field index="18" term="http://rs.tdwg.org/dwc/terms/lifestage"/>
+	<!-- locality -->
+    <field index="19" term="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
+    <field index="20" term="http://rs.tdwg.org/dwc/terms/decimalLongitude"/>
+    
+    <field index="21" term="http://rs.tdwg.org/dwc/terms/locality"/>
+    <!-- 22 sector -->
+    <!-- 23 region -->
+    <field index="24" term="http://rs.tdwg.org/dwc/terms/stateProvince"/>
+    <field index="25" term="http://rs.tdwg.org/dwc/terms/country"/>
+    <!-- 26 fundingsrc -->
+    <!-- 27 seqentryid -->
+    <!-- 28 seqdataid -->
+    <!-- 29 marker_code -->
+    <!-- 30 nucraw -->
+    <!-- 31 aminoraw -->
+    <!-- 32 seq_update -->
+    <!-- 33 total_trace_count -->
+    <!-- 34 high_trace_count -->
+    <!-- GenBank -->
+    <field index="35" term="http://rs.tdwg.org/dwc/terms/associatedSequences"/>
+    
+    <!-- defaults -->
+
+  </core>
+</archive>
