@@ -19,10 +19,19 @@ BOLD web site has URLs for images that contain ‘#’ and ‘+’ symbols. Thes
 
 ## Load into MySQL
 
-Not strictly necessary, but helps when investigating the data.
+Not strictly necessary, but helps when investigating the data and generating data for extensions.
 
 LOAD DATA LOCAL INFILE ‘/Users/rpage/iBOL_phase_0.50_COI.tsv’ REPLACE INTO TABLE barcodes IGNORE 1 LINES;
 
+### Generate image data
+
+```
+SELECT barcodes.processid, barcodes_api.processid, `barcodes_api`.image_urls, `barcodes_api`.copyright_licenses 
+FROM barcodes INNER JOIN barcodes_api ON barcodes.processid = CONCAT(barcodes_api.processid, “.COI-5P”)
+WHERE `barcodes_api`.image_urls <> “”;
+```
+
+### Generate identifications
 
 
 
@@ -94,6 +103,7 @@ Wait for GBIF to index the data… this happens in near real time.
 
 If the data needs to be tweaked, edit the data, put the new archive where it can be harvested (i.e., the endpoint) and ask GBIF to crawl it again.
 
+```
 http://api.gbif.org/v1/dataset/040c5662-da76-4782-a48e-cdea1892d14c/crawl
 
 POST

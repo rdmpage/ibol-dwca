@@ -1,5 +1,5 @@
 <archive xmlns="http://rs.tdwg.org/dwc/text/" metadata="eml.xml">
-  <core encoding="utf-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="0" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
+  <core encoding="utf-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1" rowType="http://rs.tdwg.org/dwc/terms/Occurrence">
     <files>
       <location>occurrences.tsv</location>
     </files>
@@ -67,7 +67,9 @@
     
     <!-- collection event -->
     <field index="16" term="http://rs.tdwg.org/dwc/terms/recordedBy"/>
-    <field index="17" term="http://rs.tdwg.org/dwc/terms/verbatimEventDate"/>
+    <!-- dates are in format day-month-year -->
+    <field index="17" term="http://rs.tdwg.org/dwc/terms/eventDate"/>
+    <!-- <field index="17" term="http://rs.tdwg.org/dwc/terms/verbatimEventDate"/> -->
 	<field index="18" term="http://rs.tdwg.org/dwc/terms/lifestage"/>
 	<!-- locality -->
     <field index="19" term="http://rs.tdwg.org/dwc/terms/decimalLatitude"/>
@@ -109,6 +111,7 @@
     <field term="http://purl.org/dc/terms/type" default="StillImage" />
 
   </extension>
+  
   
   
 </archive>

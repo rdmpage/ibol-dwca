@@ -312,7 +312,7 @@ while (!feof($file_handle))
 				//echo join("\t", $values) . "\n";
 				file_put_contents($media_filename, join("\t", $values) . "\n", FILE_APPEND);
 				
-				print_r($media);
+				//print_r($media);
 
 				$media_count++;
 				
@@ -333,9 +333,10 @@ while (!feof($file_handle))
 		pause();
 	}
 	
+	echo "Row $count, images found: $media_count\n";
 	
 	// testing
-	if ($count > 10) break;
+	//if ($count > 10) break;
 }
 
 ?>
