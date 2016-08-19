@@ -6,3 +6,8 @@ data/*.tsv
 data/*.zip
 
 media.txt
+identifications.txt
+images.txt
+occurrences.tsv
+
+
