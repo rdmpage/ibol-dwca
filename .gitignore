@@ -5,9 +5,34 @@ data/*.csv
 data/*.tsv
 data/*.zip
 
+data/api/*
+
+junk/*
+
 media.txt
 identifications.txt
 images.txt
 occurrences.tsv
+
+phylogeny
+
+code/simplehtmldom_1_5/.svn
+
+code/simplehtmldom_1_5/app/.svn
+code/simplehtmldom_1_5/app/js/.svn
+code/simplehtmldom_1_5/app/js/images/.svn
+
+code/simplehtmldom_1_5/example/.svn
+code/simplehtmldom_1_5/example/scraping/.svn
+
+code/simplehtmldom_1_5/manual/.svn
+code/simplehtmldom_1_5/manual/css/.svn
+code/simplehtmldom_1_5/manual/img/.svn
+code/simplehtmldom_1_5/manual/js/.svn
+
+code/simplehtmldom_1_5/testcase/.svn
+code/simplehtmldom_1_5/testcase/html/.svn
+code/simplehtmldom_1_5/testcase/reader/.svn
+
 
 

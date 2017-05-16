@@ -51,9 +51,47 @@ $basedir = dirname(dirname(__FILE__));
 
 // BOLD data files
 $filenames=array(
-'iBOL_phase_0.50_COI.tsv'
+//'iBOL_phase_0.50_COI.tsv'
+'iBOL_phase_0.75_COI.tsv',
+'iBOL_phase_1.00_COI.tsv',
+'iBOL_phase_1.25_COI.tsv',
+'iBOL_phase_1.50_COI.tsv',
+'iBOL_phase_1.75_COI.tsv'
 );
 
+$filenames=array(
+'iBOL_phase_2.0_COI.tsv',
+'iBOL_phase_2.25_COI.tsv',
+'iBOL_phase_2.50_COI.tsv',
+'iBOL_phase_2.75_COI.tsv'
+);
+
+$filenames=array(
+/*'iBOL_phase3.0_COI.tsv',
+'iBOL_phase_3.25_COI.tsv',
+'iBOL_phase_3.50_COI.tsv',
+'iBOL_phase_3.75_COI.tsv',*/
+'iBOL_phase_4.00_COI.tsv'
+);
+
+$filenames=array(
+//'iBOL_phase_4.25_COI.tsv',
+'iBOL_phase_4.50_COI.tsv',
+'iBOL_phase_4.75_COI.tsv'
+);
+
+$filenames=array(
+//'iBOL_phase_5.00_COI.tsv',
+'iBOL_phase_5.25_COI.tsv',
+'iBOL_phase_5.50_COI.tsv',
+'iBOL_phase_5.75_COI.tsv'
+);
+
+$filenames=array(
+'iBOL_phase_6.00_COI.tsv',
+'iBOL_phase_6.25_COI.tsv',
+'iBOL_phase_6.50_COI.tsv'
+);
 
 // Number of records to fetch in one API call
 $page_size = 20;
